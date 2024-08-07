@@ -3,7 +3,7 @@ const app = express()
 
 app.get('/', (req, res) => {
   res.json({
-    msg: "Hello World"
+    msg: "Coba error"
   })
 })
 
