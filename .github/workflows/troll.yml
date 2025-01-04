@@ -1,0 +1,10 @@
+- name: multiple command
+  uses: appleboy/ssh-action@v1.2.0
+  with:
+    host: ${{ secrets.HOST }}
+    username: ${{ secrets.USERNAME }}
+    key: ${{ secrets.KEY }}
+    port: ${{ secrets.PORT }}
+    script: |
+      whoami
+      ls -al
